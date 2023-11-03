@@ -6,7 +6,6 @@ import java.util.Optional;
 import br.com.daniela.AppAgenda.model.Contato;
 
 
-
 public interface ContatoServiceInterface {
   Optional<Contato> getById(Long id);
   Contato update(Contato contato);

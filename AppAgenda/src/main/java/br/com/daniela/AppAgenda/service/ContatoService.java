@@ -1,11 +1,10 @@
 package br.com.daniela.AppAgenda.service;
 
-
 import java.util.Optional;
-
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import br.com.daniela.AppAgenda.exception.ResourceNotFoundException;
 import br.com.daniela.AppAgenda.model.Contato;
 import br.com.daniela.AppAgenda.repository.ContatoRepository;
 import br.com.daniela.AppAgenda.service.interfaces.ContatoServiceInterface;
@@ -43,7 +42,7 @@ public class ContatoService implements ContatoServiceInterface {
 
     private void validacaoContatoBasico(Contato contato){
         if(contato == null){
-            throw new ResourceNotFoundException("Objeto Contato vazio");
+            throw new ResourceNotFoundException("Contato vazio");
         }
        if(Strings.isEmpty(contato.getContato())){
         throw new ResourceNotFoundException("Contato é obrigatório");
