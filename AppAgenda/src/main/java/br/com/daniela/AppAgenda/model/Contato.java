@@ -77,6 +77,9 @@ public class Contato {
       final int prime = 31;
       int result = 1;
       result = prime * result + ((id == null) ? 0 : id.hashCode());
+      result = prime * result + ((tipoContato == null) ? 0 : tipoContato.hashCode());
+      result = prime * result + ((contato == null) ? 0 : contato.hashCode());
+      result = prime * result + ((pessoa == null) ? 0 : pessoa.hashCode());
       return result;
     }
 
@@ -94,9 +97,25 @@ public class Contato {
           return false;
       } else if (!id.equals(other.id))
         return false;
+      if (tipoContato == null) {
+        if (other.tipoContato != null)
+          return false;
+      } else if (!tipoContato.equals(other.tipoContato))
+        return false;
+      if (contato == null) {
+        if (other.contato != null)
+          return false;
+      } else if (!contato.equals(other.contato))
+        return false;
+      if (pessoa == null) {
+        if (other.pessoa != null)
+          return false;
+      } else if (!pessoa.equals(other.pessoa))
+        return false;
       return true;
     }
 
+    
 
   
 }
