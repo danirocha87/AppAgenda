@@ -34,8 +34,8 @@ public class ContatoResource {
 
     @Operation(summary = "Atualizar contato a partir de um id")
      @PutMapping
-    public ResponseEntity<Contato> update(@RequestBody Contato pessoa){
-        return new ResponseEntity<>(contatoService.update(pessoa), HttpStatus.CREATED);
+    public ResponseEntity<Contato> update(@RequestBody Contato contato){
+        return new ResponseEntity<>(contatoService.update(contato), HttpStatus.CREATED);
     }
 
     @Operation(summary = "Deletar um contato a partir de um id")

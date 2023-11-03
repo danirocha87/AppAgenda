@@ -4,6 +4,8 @@ import java.util.Optional;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import br.com.daniela.AppAgenda.dto.PessoaRequestUpdateDto;
 import br.com.daniela.AppAgenda.exception.ResourceNotFoundException;
 import br.com.daniela.AppAgenda.model.Contato;
 import br.com.daniela.AppAgenda.repository.ContatoRepository;
@@ -60,6 +62,7 @@ public class ContatoService implements ContatoServiceInterface {
         }
         return contato.get();
     }
-}
+
+   }
 
 

@@ -35,6 +35,10 @@ public class PessoaService implements PessoaServiceInterface {
         
         Pessoa pessoa = new Pessoa();
         pessoa.setNome(pessoaRequest.nome());
+        pessoa.setCep(pessoaRequest.cep());
+        pessoa.setCidade(pessoaRequest.cidade());
+        pessoa.setEndereco(pessoaRequest.endereco());
+        pessoa.setUf(pessoaRequest.uf());
         return pessoaRepository.save(pessoa);
     }
 
