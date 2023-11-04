@@ -1,16 +1,19 @@
-Projeto em Java (AppAgenda - Minsait)
+<h1>Projeto em Java (AppAgenda - Minsait)</h1>
 
-Aplicativo para cadastrar pessoas e contatos . 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Back-End
+  <h2> Aplicativo para cadastrar pessoas e contatos.</h2> 
 
-Java JDK version 17.0.8
-Maven version 4.0.0
-Spring Boot 3.0.12
+![AppAgendaSwagger](https://github.com/danirocha87/AppAgenda/assets/66449092/326ac0f7-34d7-4e4a-87c2-5a25b35c1b09)
 
-Link do meu repositório para clonar o projeto: https://github.com/danirocha87/AppAgenda.git
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Execução
+
+## Back-End
+
++ Java JDK version 17.0.8
++ Maven version 4.0.0
++ Spring Boot 3.0.12
+
+ + Link do meu repositório para clonar o projeto: https://github.com/danirocha87/AppAgenda.git
+
+ ## Execução
 
 * Primeiro você clona o repositorio na maquina que esta usando e abre com a IDE de sua preferencia, uma sugestão é o VISUAL STUDIO CODE.
 Link do meu repositório para clonar o projeto: https://github.com/danirocha87/AppAgenda.git.
@@ -21,6 +24,6 @@ Para este projeto usei o banco de dados Postgres (username = postgres - password
 * Para rodar o projeto clique em AppAgendaApplication.java e aperto o RUN ele ira carregar até aparecer a mensagem no terminal de Started AppAgendaApplication.
 
 * Para acessar o aplicativo pelo Swagger digite no seu navegador http://localhost:8080/swagger-ui/index.html
-* O Swagger ira conter todas as informações principais do projeto e você tambem podera executar todas as funcionalidades que desejar .
+ O Swagger ira conter todas as informações principais do projeto e você tambem podera executar todas as funcionalidades que desejar .
 
 
